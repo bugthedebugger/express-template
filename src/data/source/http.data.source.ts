@@ -1,8 +1,8 @@
 import axios, { AxiosStatic } from "axios";
 
 abstract class HTTPSourceBase {
-  abstract get(url: string, config: any): Promise<any>;
-  abstract post(url: string, data: any, config: any): Promise<any>;
+  abstract get(url: string, config?: any): Promise<any>;
+  abstract post(url: string, data?: any, config?: any): Promise<any>;
 }
 
 export class HTTPSource implements HTTPSourceBase {
