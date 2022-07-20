@@ -12,11 +12,11 @@ export class HTTPSource implements HTTPSourceBase {
     this.axios = axios;
   }
 
-  async get(url: string, config: any): Promise<any> {
+  async get(url: string, config?: any): Promise<any> {
     return await this.axios.get(url, config);
   }
 
-  async post(url: string, data: any, config: any): Promise<any> {
+  async post(url: string, data?: any, config?: any): Promise<any> {
     return await this.axios.post(url, data, config);
   }
 }
